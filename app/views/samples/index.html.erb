@@ -1,55 +1,49 @@
-<!DOCTYPE html>
-<html lang="jp">
-
-<head>
-    <title>たいとる</title>
-    <meta charset="UTF-8">
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body>
-    <h1>Bootstrap 動作確認<h1>
-    <form action="" method="get">
-        <!-- どっち安アプリ -->
-        <div id="main" class="container-fluid">
-            <div class="row">
-                <div id="left" class="col-xs-6">
-                    <div class="form-group">
-                        <label for="left-price">価格</label>
-                        <input id="left-price" name="left-price" type="text" maxlength="20" class="form-control"> 
-                    </div>
-                    <div class="form-group">
-                        <label for="left-capacity">容量（ml, g, cc, cmなど）</label>
-                        <input id="left-capacity" name="left-capacity" type="text" maxlength="5" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="left-number">個数</label>
-                        <input id="left-number" name="left-number" type="text" maxlength="5" class="form-control">
-                    </div>
+<h1>どっち安い？アプリ</h1>
+<form action="#" method="get">
+    <!-- どっち安アプリ -->
+    <div id="main" class="container-fluid">
+        <div class="row">
+            <div id="left" class="col-xs-6">
+                <div class="form-group">
+                    <label for="left-price">価格</label>
+                    <input id="left-price" name="left-price" type="text" maxlength="20" class="form-control"> 
                 </div>
-                <div id="right" class="col-xs-6">
-                    <div class="form-group">
-                        <label for="right-price">価格</label>
-                        <input id="right-price" name="right-price" type="text" maxlength="20" class="form-control"> 
-                    </div>
-                    <div class="form-group">
-                        <label for="right-capacity">容量（ml, g, cc, cmなど）</label>
-                        <input id="right-capacity" name="right-capacity" type="text" maxlength="5" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="right-number">個数</label>
-                        <input id="right-number" name="right-number" type="text" maxlength="5" class="form-control">
-                    </div>
+                <div class="form-group">
+                    <label for="left-capacity">容量（ml, g, cc, cmなど）</label>
+                    <input id="left-capacity" name="left-capacity" type="text" maxlength="5" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="left-number">個数</label>
+                    <span class="glyphicon glyphicon-question-sign" data-toggle="popover" title="個数とは" data-content="個数が１個の場合は省略可能です。"></span>
+                    <input id="left-number" name="left-number" type="text" maxlength="5" class="form-control" aria-describedby="left-help-block">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-4 col-xs-offset-4">
-                    <button type="button" class="btn btn-primary btn-lg btn-block">テスト</button>
+            <div id="right" class="col-xs-6">
+                <div class="form-group">
+                    <label for="right-price">価格</label>
+                    <input id="right-price" name="right-price" type="text" maxlength="20" class="form-control"> 
+                </div>
+                <div class="form-group">
+                    <label for="right-capacity">容量（ml, g, cc, cmなど）</label>
+                    <input id="right-capacity" name="right-capacity" type="text" maxlength="5" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="right-number">個数</label>
+                    <span class="glyphicon glyphicon-question-sign" data-toggle="popover" title="個数とは" data-content="個数が１個の場合は省略可能です。"></span>
+                    <input id="right-number" name="right-number" type="text" maxlength="5" class="form-control" aria-describedby="right-help-block">
                 </div>
             </div>
         </div>
-    </form>
-</body>
-
-</html>
-
+        <div class="row">
+            <div class="col-xs-3">
+                <button id="clear-left" type="button" class="btn btn-primary btn-lg glyphicon glyphicon-trash"></button>
+            </div>
+            <div class="col-xs-6">
+                <button type="submit" class="btn btn-primary btn-lg btn-block">比較！</button>
+            </div>
+            <div class="col-xs-3">
+                <button id="clear-right" type="button" class="btn btn-primary btn-lg glyphicon glyphicon-trash pull-right"></button>
+            </div>
+        </div>
+    </div>
+</form>
