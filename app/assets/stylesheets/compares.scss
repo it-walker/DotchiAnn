@@ -1,9 +1,94 @@
 // Place all the styles related to the Compares controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 /*
  * Specific styles of signin component
  */
+
+
 /*
  * General styles
  */
+
+
+/*（全体の背景色） */
+
+$color__background: #eceed2;
+
+/*（ヘッダの背景色） */
+
+$color__header: #436240;
+
+/* （メニューバーの背景色） */
+
+$color__menu: #384a5a;
+
+/* （左サイドバーの背景色） */
+
+$color__left-sidebar: #d3d898;
+
+/*（中央カラムの背景色） */
+
+$color__content: #ffffff;
+
+/* （右サイドバーの背景色） */
+
+$color__right-sidebar: #d3d898;
+
+/* （フッタの背景色） */
+
+$color__footer: #719e6b;
+
+/* （アクセント色） */
+
+$color__accent: #82b340;
+.l-main {
+    background-color: $color__background;
+}
+
+.l-panel-group {
+    background-color: $color__left-sidebar;
+    padding: 5px;
+}
+
+
+/* フッターエリア */
+
+.l-footer {
+    margin-top: 60px;
+}
+
+
+/* 非表示 */
+
+.hide {
+    display: none;
+}
+
+.btn-dann {
+    color: #ffffff;
+    background-color: $color__accent;
+}
+
+.crown {
+    height: 50px;
+    font-size: 20px;
+    img {
+        width: 50px;
+        /* chrome、safari　*/
+        -webkit-transform: rotate(10deg);
+        /* firefox　*/
+        -moz-transform: rotate(10deg);
+    }
+}
+
+.same {
+    /* chrome、safari　*/
+    -webkit-transform: rotate(10deg);
+    /* firefox　*/
+    -moz-transform: rotate(10deg);
+    img {
+        width: 100px;
+    }
+}
